@@ -71,9 +71,7 @@ Click on the "Login" button in the upper right corner of the navbar. You must ha
 ### Accessing Admin Pages
 
 Once you are logged in with your departmental admin account, you will see three new pages at the top of the navbar:
-
 ![](images/new-navbar.png)
-
 
 ## Community Feedback
 
@@ -123,7 +121,7 @@ Bowfolios implements Design choice #2 to provide pair-wise relations between all
 The fields in boldface (Email for Profiles, and Name for Projects and Interests) indicate that those fields must have unique values so that they can be used as a primary key for that collection. This constraint is enforced in the schema definition associated with that collection.
 
 
-## Initialization
+### Initialization
 
 The [config](https://github.com/bowfolios/bowfolios/tree/main/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/bowfolios/bowfolios/blob/main/config/settings.development.json).
 
@@ -236,23 +234,6 @@ All the tests pass, but the first test is marked as "unstable". At the time of w
 The only impact of quarantine mode should be that the first test is marked as "unstable".
 
 
-## Development Notes
-
-UHM Lost and Found is meant to illustrate an example of a website University of Hawaii Manoa departments can use to list lost and found items in their offices. For a real-life application, several additional security-related changes must be implemented:
-
-* Use of email-based password specification for users, and/or use of an alternative authentication mechanism.
-* Use of https so that passwords are sent in encrypted format.
-
-
-### Continuous Integration
-
-![ci-badge](https://github.com/bowfolios/bowfolios/workflows/ci-bowfolios/badge.svg)
-
-UHM Lost and Found uses [GitHub Actions](https://docs.github.com/en/free-pro-team@latest/actions) to automatically run ESLint and TestCafe each time a commit is made to the default branch.  You can see the results of all recent "workflows" at [https://github.com/bowfolios/bowfolios/actions](https://github.com/bowfolios/bowfolios/actions).
-
-The workflow definition file is quite simple and is located at
-[.github/workflows/ci.yml](https://github.com/bowfolios/bowfolios/blob/main/.github/workflows/ci.yml).
-
 ## Development History
 
 The development process for UHM Lost and Found conforms to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314f19/modules/project-management/) practices. In a nutshell:
@@ -272,18 +253,8 @@ The following sections document the current development history of UHM Lost and 
 The goal of Milestone 1 is to create a set of HTML pages providing a mockup of the pages in the system.
 
 Milestone 1 was managed using [BowFolio GitHub Project Board M1](https://github.com/bowfolios/bowfolios/projects/1):
-
 ![](images/project-board-1.png)
 
-## Example Enhancements
-
-There are a number of simple enhancements that can be added in development later:
-
-* Display an email icon that links to a mailto: for each associated user.
-* Display the home page for each project as a home icon. Click on it to visit the home page.
-* Add social media accounts to the profile (Instagram, Twitter, Facebook) and show the associated department accounts.
-* It would be nice for users to only be able to edit the items that they have created.  Add an "owner" field to the item collection, and then only allow a user to edit an item definition if they own it.
-* The testcafe acceptance tests might only test successful form submissions. Add a test in which you fill out a form incorrectly (perhaps omitting a required field) and then test to ensure that the form does not submit successfully.
 
 ## Contact Us
 

@@ -6,6 +6,7 @@
 * [User Guide](#user-guide)
 * [Development Notes](#development-notes)
 * [Development History](#development-history)
+* [Example Enhancements](#example-enhancements)
 * [Team](#team)
 
 ## Overview

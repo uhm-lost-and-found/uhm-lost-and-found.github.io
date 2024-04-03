@@ -166,7 +166,7 @@ You will see browser windows appear and disappear as the tests run.  If the test
 ```
 $ meteor npm run testcafe
 
-> uhm-lost-and-found@ testcafe /Users/philipjohnson/github/uhm-lost-and-found/uhm-lost-and-found/app
+> uhm-lost-and-found@ testcafe /Users/MRasavong/github/uhm-lost-and-found/uhm-lost-and-found/app
 > testcafe chrome tests/*.testcafe.js
 
  Running tests in:
@@ -198,7 +198,7 @@ Then, invoke `meteor npm run testcafe-ci`.  You will not see any windows appear.
 ```
 $ meteor npm run testcafe-ci
 
-> uhm-lost-and-found@ testcafe-ci /Users/philipjohnson/github/uhm-lost-and-found/uhm-lost-and-found/app
+> uhm-lost-and-found@ testcafe-ci /Users/MRasavong/github/uhm-lost-and-found/uhm-lost-and-found/app
 > testcafe chrome:headless tests/*.testcafe.js -q --app "meteor npm run start"
 
  Running tests in:

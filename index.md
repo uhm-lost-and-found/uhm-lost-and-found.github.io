@@ -10,7 +10,7 @@
 
 ## Overview
 
-UHM Lost and Found is a web application dedicated to posting lost and found items specifically for the University of Hawaii Manoa campus. Departments can post about lost items within their offices, enabling students to recognize their belongings and get in touch with the respective departments to arrange pick-up.
+UHM Lost and Found is a web application dedicated to posting lost and found items for the University of Hawaii Manoa campus. Departments can post about lost items within their offices, enabling students to recognize their belongings and get in touch with the respective departments to arrange pick-up.
 
 The following tools are used:
 

@@ -1,6 +1,6 @@
-# UH Lost and Found
+# UHM Lost and Found
 
-## Table of contents
+## Table of Contents
 
 * [Overview](#overview)
 * [Deployment](#deployment)

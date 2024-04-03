@@ -47,7 +47,7 @@ The login page enables the University of Hawaii Manoa departments access to the 
 
 ### Items Pages (Add Item, List Items, Third Page)
 
-Upon logging in with a department admin account, UHM Lost and Found provides three pages to add new items, edit or remove current items, and (insert third page description).
+Upon logging in with a department admin account, UHM Lost and Found provides three pages to add new items, edit or remove current items, and (insert a third-page description).
 
 The Add Item page allows departments to add a new lost item.
 
@@ -80,15 +80,17 @@ We are interested in your experience using UHM Lost and Found!  If you would lik
 
 ## Developer Guide
 
+Note: Many of the instructions stated below have yet to be implemented and will be included in the final product.
+
 This section provides information of interest to Meteor developers wishing to use this code base as a basis for their own development tasks.
 
 ### Installation
 
 First, [install Meteor](https://www.meteor.com/install).
 
-Second, visit the [Bowfolios application github page](https://github.com/bowfolios/bowfolios), and click the "Use this template" button to create your own repository initialized with a copy of this application. Alternatively, you can download the sources as a zip file or make a fork of the repo.  However you do it, download a copy of the repo to your local computer.
+Second, visit the [UHM Lost and Found application GitHub page](https://github.com/uhm-lost-and-found/uhm-lost-and-found), and click the "Use this template" button to create your own repository initialized with a copy of this application. Alternatively, you can download the sources as a zip file or make a fork of the repo.  However you do it, download a copy of the repo to your local computer.
 
-Third, cd into the bowfolios/app directory and install libraries with:
+Third, cd into the uhm-lost-and-found/app directory and install libraries with:
 
 ```
 $ meteor npm install
@@ -104,26 +106,16 @@ If all goes well, the application will appear at [http://localhost:3000](http://
 
 ### Application Design
 
-Bowfolios is based upon [meteor-application-template-react](https://ics-software-engineering.github.io/meteor-application-template-react/) and [meteor-example-form-react](https://ics-software-engineering.github.io/meteor-example-form-react/). Please use the videos and documentation at those sites to better acquaint yourself with the basic application design and form processing in Bowfolios.
+UHM Lost and Found is based upon [meteor-application-template-react](https://ics-software-engineering.github.io/meteor-application-template-react/) and [meteor-example-form-react](https://ics-software-engineering.github.io/meteor-example-form-react/). Please use the videos and documentation at those sites to better acquaint yourself with the basic application design and form processing in UHM Lost and Found.
 
 ### Data model
 
-As noted above, the Bowfolios data model consists of three "primary" collections (Projects, Profiles, and Interests), as well as three "join" Collections (ProfilesProjects, ProfilesInterests, and ProjectsInterests).  To understand this design choice, consider the situation where you want to specify the projects associated with a Profile.
-
-Design choice #1: Provide a field in Profile collection called "Projects", and fill it with an array of project names. This choice works great when you want to display a Profile and indicate the Projects it's associated with.  But what if you want to go the other direction: display a Project and all of the Profiles associated with it?  Then you have to do a sequential search through all of the Profiles, then do a sequential search through that array field looking for a match.  That's computationally expensive and also just silly.
-
-Design choice #2:  Provide a "join" collection where each document contains two fields: Profile name and Project name. Each entry indicates that there is a relationship between those two entities. Now, to find all the Projects associated with a Profile, just search this collection for all the documents that match the Profile, then extract the Project field. Going the other way is just as easy: to find all the Profiles associated with a Project, just search the collection for all documents matching the Project, then extract the Profile field.
-
-Bowfolios implements Design choice #2 to provide pair-wise relations between all three of its primary collections:
-
-![](images/data-model.png)
-
-The fields in boldface (Email for Profiles, and Name for Projects and Interests) indicate that those fields must have unique values so that they can be used as a primary key for that collection. This constraint is enforced in the schema definition associated with that collection.
+As noted above, the UHM Lost and Found data model consists of item-type collections. To understand this design choice, consider the situation where you want to specify the items associated with a department.
 
 
 ### Initialization
 
-The [config](https://github.com/bowfolios/bowfolios/tree/main/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/bowfolios/bowfolios/blob/main/config/settings.development.json).
+The [config](https://github.com/uhm-lost-and-found/uhm-lost-and-found/tree/main/config) directory is intended to hold settings files.  The repository contains one file: [config/settings.development.json](https://github.com/uhm-lost-and-found/uhm-lost-and-found/blob/main/config/settings.development.json).
 
 This file contains default definitions for Profiles, Projects, and Interests and the relationships between them. Consult the walkthrough video for more details.
 
@@ -134,7 +126,7 @@ The settings.development.json file contains a field called "loadAssetsFile". It 
 
 #### ESLint
 
-BowFolios includes a [.eslintrc](https://github.com/bowfolios/bowfolios/blob/main/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
+UHM Lost and Found includes a [.eslintrc](https://github.com/uhm-lost-and-found/uhm-lost-and-found/blob/main/app/.eslintrc) file to define the coding style adhered to in this application. You can invoke ESLint from the command line as follows:
 
 ```
 meteor npm run lint
@@ -145,7 +137,7 @@ Here is sample output indicating that no ESLint errors were detected:
 ```
 $ meteor npm run lint
 
-> bowfolios@ lint /Users/philipjohnson/github/bowfolios/bowfolios/app
+> uhm-lost-and-found@ lint /Users/MRasavong/github/uhm-lost-and-found/uhm-lost-and-found/app
 > eslint --quiet --ext .jsx --ext .js ./imports ./tests
 
 $
@@ -157,11 +149,11 @@ It's significantly easier to do development with ESLint integrated directly into
 
 #### End to End Testing
 
-BowFolios uses [TestCafe](https://devexpress.github.io/testcafe/) to provide automated end-to-end testing.
+UHM Lost and Found uses [TestCafe](https://devexpress.github.io/testcafe/) to provide automated end-to-end testing.
 
-The BowFolios end-to-end test code employs the page object model design pattern.  In the [bowfolios tests/ directory](https://github.com/bowfolios/bowfolios/tree/main/app/tests), the file [tests.testcafe.js](https://github.com/bowfolios/bowfolios/blob/main/app/tests/tests.testcafe.js) contains the TestCafe test definitions. The remaining files in the directory contain "page object models" for the various pages in the system (i.e. Home, Landing, Interests, etc.) as well as one component (navbar). This organization makes the test code shorter, easier to understand, and easier to debug.
+The UHM Lost and Found end-to-end test code employs the page object model design pattern.  In the [uhm-lost-found tests/ directory](https://github.com/uhm-lost-and-found/uhm-lost-and-found/tree/main/app/tests), the file [tests.testcafe.js](https://github.com/uhm-lost-and-found/uhm-lost-and-found/blob/main/app/tests/tests.testcafe.js) contains the TestCafe test definitions. The remaining files in the directory contain "page object models" for the various pages in the system (i.e. Home, Landing, Interests, etc.) as well as one component (navbar). This organization makes the test code shorter, easier to understand, and easier to debug.
 
-To run the end-to-end tests in development mode, you must first start up a BowFolios instance by invoking `meteor npm run start` in one console window.
+To run the end-to-end tests in development mode, you must first start up a UHM Lost and Found instance by invoking `meteor npm run start` in one console window.
 
 Then, in another console window, start up the end-to-end tests with:
 
@@ -174,13 +166,13 @@ You will see browser windows appear and disappear as the tests run.  If the test
 ```
 $ meteor npm run testcafe
 
-> bowfolios@ testcafe /Users/philipjohnson/github/bowfolios/bowfolios/app
+> uhm-lost-and-found@ testcafe /Users/philipjohnson/github/uhm-lost-and-found/uhm-lost-and-found/app
 > testcafe chrome tests/*.testcafe.js
 
  Running tests in:
  - Chrome 86.0.4240.111 / macOS 10.15.7
 
- Bowfolios localhost test with default db
+ UHM Lost and Found localhost test with default db
  ✓ Test that landing page shows up
  ✓ Test that signin and signout work
  ✓ Test that signup page, then logout works
@@ -199,20 +191,20 @@ $ meteor npm run testcafe
 
 You can also run the testcafe tests in "continuous integration mode".  This mode is appropriate when you want to run the tests using a continuous integration service like Jenkins, Semaphore, CircleCI, etc.  In this case, it is problematic to already have the server running in a separate console, and you cannot have the browser window appear and disappear.
 
-To run the testcafe tests in continuous integration mode, first ensure that BowFolios is not running in any console.
+To run the testcafe tests in continuous integration mode, first ensure that UHM Lost and Found is not running in any console.
 
 Then, invoke `meteor npm run testcafe-ci`.  You will not see any windows appear.  When the tests finish, the console should look like this:
 
 ```
 $ meteor npm run testcafe-ci
 
-> bowfolios@ testcafe-ci /Users/philipjohnson/github/bowfolios/bowfolios/app
+> uhm-lost-and-found@ testcafe-ci /Users/philipjohnson/github/uhm-lost-and-found/uhm-lost-and-found/app
 > testcafe chrome:headless tests/*.testcafe.js -q --app "meteor npm run start"
 
  Running tests in:
  - Chrome 86.0.4240.111 / macOS 10.15.7
 
- Bowfolios localhost test with default db
+ UHM Lost and Found localhost test with default db
  ✓ Test that landing page shows up (unstable)
  ✓ Test that signin and signout work
  ✓ Test that signup page, then logout works
@@ -252,7 +244,7 @@ The following sections document the current development history of UHM Lost and 
 
 The goal of Milestone 1 is to create a set of HTML pages providing a mockup of the pages in the system.
 
-Milestone 1 was managed using [BowFolio GitHub Project Board M1](https://github.com/bowfolios/bowfolios/projects/1):
+Milestone 1 was managed using [UHM Lost and Found GitHub Project Board M1](https://github.com/uhm-lost-and-found/uhm-lost-and-found/projects/1):
 ![](images/project-board-1.png)
 
 

@@ -120,7 +120,7 @@ There are a number of simple enhancements that can be added in development later
 * Display an email icon that links to a mailto: for each associated user.
 * Display the home page for each project as a home icon. Click on it to visit the home page.
 * Add social media accounts to the profile (Instagram, Twitter, Facebook) and show the associated department accounts.
-* It would be nice for users to only be able to edit the Projects that they have created.  Add an "owner" field to the Project collection, and then only allow a user to edit a Project definition if they own it.
+* It would be nice for users to only be able to edit the items that they have created.  Add an "owner" field to the item collection, and then only allow a user to edit an item definition if they own it.
 * The testcafe acceptance tests might only test successful form submissions. Add a test in which you fill out a form incorrectly (perhaps omitting a required field) and then test to ensure that the form does not submit successfully.
 
 ## Team

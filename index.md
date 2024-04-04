@@ -247,7 +247,7 @@ The following sections document the current development history of UHM Lost and 
 
 The goal of Milestone 1 is to create a set of HTML pages providing a mockup of the pages in the system.
 
-Milestone 1 was managed using [UHM Lost and Found GitHub Project Board M1](https://github.com/uhm-lost-and-found/uhm-lost-and-found/projects/2):
+Milestone 1 was managed using [UHM Lost and Found GitHub Project Board M1](https://github.com/orgs/uhm-lost-and-found/projects/2/views/2):
 ![](images/project-board-1.png)
 
 

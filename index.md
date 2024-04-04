@@ -37,29 +37,31 @@ This section provides a walkthrough of the UHM Lost and Found user interface and
 
 The landing page is presented to users when they visit the top-level URL of the site.
 
-![](images/landing-page.png)
+![](img/landingPage.png)
+
+### Item Page
+
+From the landing page the user may select a posted found item which then directs the user to an item page that includes further information regarding the department location and hours the item can be claimed.
+
+![](img/itemPage.png)
 
 ### Login Page
 
 The login page enables the University of Hawaii Manoa departments access to the lost and found items database.
 
-![](images/login-page.png)
+![](img/loginPage.png)
 
-### Items Pages (Add Item, List Items, Third Page)
+### Items Pages (Add Item, List Items)
 
-Upon logging in with a department admin account, UHM Lost and Found provides three pages to add new items, edit or remove current items, and (insert a third-page description).
+Upon logging in with a department admin account, UHM Lost and Found provides two pages to add new items, edit or remove current items from a List Items page.
 
 The Add Item page allows departments to add a new lost item.
 
-![](images/add-item-page.png)
+![](img/addItemPage.png)
 
 The List Items page shows all the current lost items in the database and their associated locations, the approximate times the items were lost, and the item descriptions. 
 
-![](images/list-items-page.png)
-
-Finally, the (third page) allows departments to...
-
-![](images/third-page.png)
+![](img/adminItemPage.png)
 
 
 ### Login

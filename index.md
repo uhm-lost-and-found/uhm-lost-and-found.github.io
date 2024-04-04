@@ -68,14 +68,15 @@ The List Items page shows all the current lost items in the database and their a
 
 Click on the "Login" button in the upper right corner of the navbar. You must have been previously registered in the system to access departmental admin features:
 
-![](images/login2-page.png)
+![](img/loginNavBar.png)
 
 ### Accessing Admin Pages
 
-Once you are logged in with your departmental admin account, you will see three new pages at the top of the navbar:
-![](images/new-navbar.png)
+Once you are logged in with your departmental admin account, you will see two new pages at the top of the navbar:
 
-## Community Feedback
+![](img/adminNavBar.png)
+
+<!-- ## Community Feedback
 
 We are interested in your experience using UHM Lost and Found!  If you would like, please take a couple of minutes to fill out the [UHM Lost and Found Feedback Form](). It contains only five short questions and will help us understand how to improve the system.
 
@@ -84,7 +85,7 @@ We are interested in your experience using UHM Lost and Found!  If you would lik
 
 Note: Many of the instructions stated below have yet to be implemented and will be included in the final product.
 
-This section provides information of interest to Meteor developers wishing to use this code base as a basis for their own development tasks.
+This section provides information of interest to Meteor developers wishing to use this code base as a basis for their own development tasks. -->
 
 ### Installation
 

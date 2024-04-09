@@ -179,12 +179,9 @@ $ meteor npm run testcafe
  ✓ Test that landing page shows up
  ✓ Test that signin and signout work
  ✓ Test that signup page, then logout works
- ✓ Test that profiles page displays
- ✓ Test that interests page displays
- ✓ Test that projects page displays
+ ✓ Test that lostItems page displays
  ✓ Test that home page display and profile modification works
- ✓ Test that addProject page works
- ✓ Test that filter page works
+ ✓ Test that addItem page works
 
 
  9 passed (40s)
@@ -208,15 +205,12 @@ $ meteor npm run testcafe-ci
  - Chrome 86.0.4240.111 / macOS 10.15.7
 
  UHM Lost and Found localhost test with default db
- ✓ Test that landing page shows up (unstable)
+ ✓ Test that landing page shows up
  ✓ Test that signin and signout work
  ✓ Test that signup page, then logout works
- ✓ Test that profiles page displays
- ✓ Test that interests page displays
- ✓ Test that projects page displays
+ ✓ Test that lostItems page displays
  ✓ Test that home page display and profile modification works
- ✓ Test that addProject page works
- ✓ Test that filter page works
+ ✓ Test that addItem page works
 
 
  9 passed (56s)
@@ -235,10 +229,10 @@ The development process for UHM Lost and Found conforms to [Issue Driven Project
 
 * Development consists of a sequence of Milestones.
 * Each Milestone is specified as a set of tasks.
-* Each task is described using a GitHub Issue, and is assigned to a single developer to complete.
+* Each task is described using a GitHub Issue and is assigned to a single developer to complete.
 * Tasks should typically consist of work that can be completed in 2-4 days.
 * The work for each task is accomplished with a git branch named "issue-XX", where XX is replaced by the issue number.
-* When a task is complete, its corresponding issue is closed and its corresponding git branch is merged into master.
+* When a task is complete, its corresponding issue is closed and its corresponding git branch is merged into main.
 * The state (todo, in progress, complete) of each task for a milestone is managed using a GitHub Project Board.
 
 The following sections document the current development history of UHM Lost and Found.

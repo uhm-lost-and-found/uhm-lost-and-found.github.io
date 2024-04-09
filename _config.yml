@@ -1,6 +1,6 @@
 title: UHM Lost and Found
 description: A web application dedicated to posting lost and found items for the University of Hawaii Manoa campus.
 google_analytics:
-theme: jekyll-theme-minimal
+theme: jekyll-theme-time-machine
 gems:
   - jekyll-mentions

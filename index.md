@@ -24,10 +24,10 @@ The following tools are used:
 It implements a variety of useful design concepts, including:
 
 * Several collections (Clothing, Technology, IDs) for item types.
-* Top-level index pages (Add Item, List Items, List Items Admin) for admin departmental accounts.
-* A simple Edit function accessible from the List Items page to edit item descriptions or remove items.
+* Top-level index pages (Add Item, Lost Items, Lost Items Admin) for admin departmental accounts.
+* A simple Edit function accessible from the Lost Items page to edit item descriptions or remove items.
 * Authentication using the built-in Meteor accounts package along with a Login page.
-* Authorization examples: certain pages are public (Landing, Login), while others require departmental admin accounts (Add Item, List Items, List Items Admin).
+* Authorization examples: certain pages are public (Landing, Login), while others require departmental admin accounts (Add Item, Lost Items, Lost Items Admin).
 
 ## User Guide
 
@@ -55,15 +55,15 @@ The sign-in page enables the University of Hawaii Manoa departments access to th
 
 ![](img/sign-out-page.png)
 
-### Items Pages (Add Item, List Items, List Items Admin)
+### Items Pages (Lost Items, Add Item, Lost Items Admin)
 
-Upon logging in with a department admin account, UHM Lost and Found provides two pages to add new items, edit or remove current items from a List Items page, along with the regular List Items page accessible to everyone.
+Upon logging in with a department admin account, UHM Lost and Found provides two pages to add new items, edit or remove current items from a Lost Items page, along with the regular Lost Items page accessible to everyone.
 
-The List Items page shows all the current lost items in the database and their associated locations, the approximate times the items were lost, and the item descriptions. 
+The Lost Items page shows all the current lost items in the database and their associated locations, the approximate times the items were lost, and the item descriptions. 
 
 ![](img/adminItemPage.png)
 
-The List Items Admin page allows departments to edit pre-existing lost items.
+The Lost Items Admin page allows departments to edit pre-existing lost items.
 
 ![](img/edit-item-page.png)
 
@@ -75,13 +75,13 @@ The Add Item page allows departments to add a new lost item.
 
 Click on the "Sign In" button in the upper right corner of the navbar. You must have been previously registered in the system to access departmental admin features:
 
-![](img/loginNavBar.png)
+![](img/sign-in-navbar.png)
 
 ### Accessing Admin Pages
 
 Once you are signed in with your departmental admin account, you will see two new pages at the top of the navbar:
 
-![](img/adminNavBar.png)
+![](img/signed-in-navbar.png)
 
 ## Deployment
 

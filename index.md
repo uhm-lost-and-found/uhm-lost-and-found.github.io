@@ -4,6 +4,7 @@
 
 * [Overview](#overview)
 * [User Guide](#user-guide)
+* [Deployment](#deployment)
 * [Community Feedback](#community-feedback)
 * [Developer Guide](#developer-guide)
 * [Development History](#development-history)
@@ -75,6 +76,10 @@ Click on the "Login" button in the upper right corner of the navbar. You must ha
 Once you are logged in with your departmental admin account, you will see two new pages at the top of the navbar:
 
 ![](img/adminNavBar.png)
+
+## Deployment
+
+http://64.23.249.21/
 
 <!-- ## Community Feedback
 
@@ -251,4 +256,4 @@ UHM Lost and Found is designed, implemented, and maintained by [Victor Pagan](ht
 
 [GitHub Organization](https://github.com/uhm-lost-and-found)
 
-[Team Contract](https://courses.ics.hawaii.edu/ics314s24/morea/final-project/experience-final-project-m1.html)
+[Team Contract](https://docs.google.com/document/d/1WC3Iz7WFFRT5WPFq5RjK-05e0mvruvHO3ZeLoWdCals/edit?usp=sharing)

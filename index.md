@@ -5,7 +5,6 @@
 * [Overview](#overview)
 * [User Guide](#user-guide)
 * [Deployment](#deployment)
-* [Community Feedback](#community-feedback)
 * [Developer Guide](#developer-guide)
 * [Development History](#development-history)
 * [Contact Us](#contact-us)
@@ -48,7 +47,7 @@ From the landing page, the user may select a posted found item which then direct
 
 ### Login Page
 
-The login page enables the University of Hawaii Manoa departments access to the lost and found items database.
+The sign-in page enables the University of Hawaii Manoa departments access to the lost and found items database.
 
 ![](img/sign-in-page.png)
 
@@ -72,15 +71,15 @@ The Add Item page allows departments to add a new lost item.
 
 ![](img/add-item-page.png)
 
-### Login
+### Sign-In
 
-Click on the "Login" button in the upper right corner of the navbar. You must have been previously registered in the system to access departmental admin features:
+Click on the "Sign In" button in the upper right corner of the navbar. You must have been previously registered in the system to access departmental admin features:
 
 ![](img/loginNavBar.png)
 
 ### Accessing Admin Pages
 
-Once you are logged in with your departmental admin account, you will see two new pages at the top of the navbar:
+Once you are signed in with your departmental admin account, you will see two new pages at the top of the navbar:
 
 ![](img/adminNavBar.png)
 
@@ -88,16 +87,12 @@ Once you are logged in with your departmental admin account, you will see two ne
 
 http://64.23.249.21/
 
-<!-- ## Community Feedback
-
-We are interested in your experience using UHM Lost and Found!  If you would like, please take a couple of minutes to fill out the [UHM Lost and Found Feedback Form](). It contains only five short questions and will help us understand how to improve the system.
-
 
 ## Developer Guide
 
 Note: Many of the instructions stated below have yet to be implemented and will be included in the final product.
 
-This section provides information of interest to Meteor developers wishing to use this code base as a basis for their own development tasks. -->
+This section provides information of interest to Meteor developers wishing to use this code base as a basis for their own development tasks.
 
 ### Installation
 

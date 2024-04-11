@@ -248,3 +248,7 @@ Milestone 1 was managed using [UHM Lost and Found GitHub Project Board M1](https
 ## Contact Us
 
 UHM Lost and Found is designed, implemented, and maintained by [Victor Pagan](https://vicpagan.github.io/), [Michelle Rasavong](https://mrasavong.github.io/), [Jalen Lum](https://jalenlum.github.io/), and [Sierra Jansons-Dizon](https://sierradizon.github.io/).
+
+[GitHub Organization](https://github.com/uhm-lost-and-found)
+
+[Team Contract](https://courses.ics.hawaii.edu/ics314s24/morea/final-project/experience-final-project-m1.html)

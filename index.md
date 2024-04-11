@@ -25,10 +25,10 @@ The following tools are used:
 It implements a variety of useful design concepts, including:
 
 * Several collections (Clothing, Technology, IDs) for item types.
-* Top-level index pages (Add Item, List Items, Third Page) for admin departmental accounts.
+* Top-level index pages (Add Item, List Items, List Items Admin) for admin departmental accounts.
 * A simple Edit function accessible from the List Items page to edit item descriptions or remove items.
 * Authentication using the built-in Meteor accounts package along with a Login page.
-* Authorization examples: certain pages are public (Landing, Login), while other pages require departmental admin accounts (Add Item, List Items, Third Page).
+* Authorization examples: certain pages are public (Landing, Login), while others require departmental admin accounts (Add Item, List Items, List Items Admin).
 
 ## User Guide
 
@@ -42,7 +42,7 @@ The landing page is presented to users when they visit the top-level URL of the 
 
 ### Item Page
 
-From the landing page the user may select a posted found item which then directs the user to an item page that includes further information regarding the department location and hours the item can be claimed.
+From the landing page, the user may select a posted found item which then directs the user to an item page that includes further information regarding the department location and hours the item can be claimed.
 
 ![](img/itemPage.png)
 
@@ -52,18 +52,21 @@ The login page enables the University of Hawaii Manoa departments access to the 
 
 ![](img/loginPage.png)
 
-### Items Pages (Add Item, List Items)
+### Items Pages (Add Item, List Items, List Items Admin)
 
-Upon logging in with a department admin account, UHM Lost and Found provides two pages to add new items, edit or remove current items from a List Items page.
-
-The Add Item page allows departments to add a new lost item.
-
-![](img/addItemPage.png)
+Upon logging in with a department admin account, UHM Lost and Found provides two pages to add new items, edit or remove current items from a List Items page, along with the regular List Items page accessible to everyone.
 
 The List Items page shows all the current lost items in the database and their associated locations, the approximate times the items were lost, and the item descriptions. 
 
 ![](img/adminItemPage.png)
 
+The List Items Admin page allows departments to edit pre-existing lost items.
+
+
+
+The Add Item page allows departments to add a new lost item.
+
+![](img/addItemPage.png)
 
 ### Login
 
@@ -185,11 +188,12 @@ $ meteor npm run testcafe
  ✓ Test that signin and signout work
  ✓ Test that signup page, then logout works
  ✓ Test that lostItems page displays
+ ✓ Test that lostItemsAdmin page displays
  ✓ Test that home page display and profile modification works
  ✓ Test that addItem page works
 
 
- 9 passed (40s)
+ 7 passed (40s)
 
  $
 ```
@@ -214,11 +218,12 @@ $ meteor npm run testcafe-ci
  ✓ Test that signin and signout work
  ✓ Test that signup page, then logout works
  ✓ Test that lostItems page displays
+ ✓ Test that lostItemsAdmin page displays
  ✓ Test that home page display and profile modification works
  ✓ Test that addItem page works
 
 
- 9 passed (56s)
+ 7 passed (56s)
 
 $
 ```

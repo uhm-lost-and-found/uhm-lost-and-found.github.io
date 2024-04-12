@@ -37,13 +37,13 @@ This section provides a walkthrough of the UHM Lost and Found user interface and
 
 The landing page is presented to users when they visit the top-level URL of the site.
 
-![](img/landing-page.png)
+![](img/landing-M1.png)
 
 ### Item Page
 
 From the landing page, the user may select a posted found item which then directs the user to an item page that includes further information regarding the department location and hours the item can be claimed.
 
-![](img/itemPage.png)
+![](img/lost-items-M1.png)
 
 ### Login Page
 
@@ -61,7 +61,7 @@ Upon logging in with a department admin account, UHM Lost and Found provides two
 
 The Lost Items page shows all the current lost items in the database and their associated locations, the approximate times the items were lost, and the item descriptions. 
 
-![](img/adminItemPage.png)
+![](img/lost-items-admin-M1.png)
 
 The Lost Items Admin page allows departments to edit pre-existing lost items.
 

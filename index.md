@@ -11,7 +11,7 @@
 
 ## Overview
 
-UHM Lost and Found is a web application dedicated to posting lost and found items for the University of Hawaii Manoa campus. Departments can post about lost items within their offices, enabling students to recognize their belongings and get in touch with the respective departments to arrange pick-up.
+UHM Lost and Found is a web application dedicated to posting lost and found items for the University of Hawaii Manoa campus. Departments can post about lost items within their offices, enabling students to recognize their belongings and know exactly where they may find it.
 
 The following tools are used:
 
@@ -35,19 +35,19 @@ This section provides a walkthrough of the UHM Lost and Found user interface and
 
 ### Landing Page
 
-The landing page is presented to users when they visit the top-level URL of the site.
+The Landing Page is presented to users when they visit the top-level URL of the site.
 
 ![](img/landing-page-M1.png)
 
 ### Item Page
 
-From the landing page, viewers may access the Lost Items page to view a catalog of lost items on campus.
+From the Landing Page, users may access the Lost Items page to view a catalog of misplaced items on campus.
 
 ![](img/lost-items-M1.png)
 
 ### Login Page
 
-The sign-in page enables the University of Hawaii Manoa departments access to the lost and found items database.
+The Sign-In Page enables the University of Hawaii Manoa departments access to the lost and found items database.
 
 ![](img/sign-in-page.png)
 
@@ -57,13 +57,13 @@ The sign-in page enables the University of Hawaii Manoa departments access to th
 
 ### Items Pages (Lost Items, Add Item, Lost Items Admin)
 
-Upon logging in with a department admin account, UHM Lost and Found provides two pages to add new items, and to edit or remove current items from a Lost Items page.
+Upon logging in with a department admin account, UHM Lost and Found provides additional pages for adding new items, and another to edit or remove current items from a lost items page.
 
 The Lost Items page will show all the current lost items in the database and their associated locations, the approximate times the items were lost, and the item descriptions. 
 
 ![](img/lost-items-admin-M1.png)
 
-The Lost Items Admin page allows departments to edit pre-existing lost items.
+The Lost Items Admin page allows departments to edit or remove pre-existing lost items.
 
 ![](img/edit-item-page.png)
 

@@ -53,7 +53,7 @@ The Sign-In Page enables the University of Hawaii Manoa departments access to th
 
 ![](img/sign-out-page.png)
 
-### Items Pages (Lost Items, Add Item, Lost Items Admin)
+### Items Pages (Lost Items, Add Item, Edit Items Admin)
 
 Upon logging in with a department admin account, UHM Lost and Found provides additional pages for adding new items, and another to edit or remove current items from a lost items page.
 
@@ -61,7 +61,7 @@ The Lost Items page will show all the current lost items in the database and the
 
 ![](img/M3-itempage-admin.png)
 
-The Lost Items Admin page allows departments to edit or remove pre-existing lost items.
+The Edit Items Admin page allows departments to edit or remove pre-existing lost items.
 
 ![](img/M3-editform.png)
 
@@ -77,9 +77,10 @@ Click on the "Sign In" button in the upper right corner of the navbar. You must 
 
 ### Accessing Admin Pages
 
-Once you are signed in with your departmental admin account, you will see two new pages at the top of the navbar:
+Once you are signed in with your department and Admin accounts include two new pages (Add Item, and Edit Item) at the top of the navbar. The Admin account will also include Departments and Add Departments links.
+(
 
-![](img/signed-in-navbar.png)
+![](img/M2-admin-navbar.png)
 
 ## Deployment
 

@@ -82,7 +82,7 @@ Once you are signed in with your department or Admin account, two new page links
 
 ## Deployment
 
-http://64.23.249.21/
+https://uhmlostandfound.com/
 
 
 ## Developer Guide

@@ -83,7 +83,7 @@ Once you are signed in with your department or Admin account, two new page links
 
 ## Deployment
 
-https://uhmlostandfound.com/
+[https://uhmlostandfound.com/](https://uhmlostandfound.com/)
 
 
 ## Developer Guide
@@ -201,7 +201,7 @@ $ meteor npm run testcafe
 
 You can also run the testcafe tests in "continuous integration mode".  This mode is appropriate when you want to run the tests using a continuous integration service like Jenkins, Semaphore, CircleCI, etc.  In this case, it is problematic to already have the server running in a separate console, and you cannot have the browser window appear and disappear.
 
-To run the testcafe tests in continuous integration mode, first ensure that UHM Lost and Found is not running in any console.
+To run the testcafe tests in continuous integration mode, ensure that UHM Lost and Found is not running in any console.
 
 Then, invoke `meteor npm run testcafe-ci`.  You will not see any windows appear.  When the tests finish, the console should look like this:
 
@@ -270,7 +270,7 @@ Milestone 3 was managed using [UHM Lost and Found GitHub Project Board M3](https
 
 [![uhm-lost-and-found](https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions/workflows/ci.yml)
 
-UHM Lost and Found uses GitHub Actions to automatically run ESLint and TestCafe each time a commit is made to the default branch. You can see the results of all our recent “workflows” at https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions.
+UHM Lost and Found uses GitHub Actions to automatically run ESLint and TestCafe each time a commit is made to the default branch. You can see the results of all our recent “workflows” at [https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions](https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions).
 
 The workflow definition file is located at .github/workflows/ci.yml.
 

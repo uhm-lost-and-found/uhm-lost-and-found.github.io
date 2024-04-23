@@ -88,15 +88,13 @@ http://64.23.249.21/
 
 ## Developer Guide
 
-Note: Many of the instructions stated below have yet to be implemented and will be included in the final product.
-
-This section provides information of interest to Meteor developers wishing to use this code base as a basis for their own development tasks.
+This section provides information of interest to Meteor developers wishing to use this code base as a basis for their development tasks.
 
 ### Installation
 
 First, [install Meteor](https://www.meteor.com/install).
 
-Second, visit the [UHM Lost and Found application GitHub page](https://github.com/uhm-lost-and-found/uhm-lost-and-found), and click the "Use this template" button to create your own repository initialized with a copy of this application. Alternatively, you can download the sources as a zip file or make a fork of the repo.  However you do it, download a copy of the repo to your local computer.
+Second, visit the [UHM Lost and Found application GitHub page](https://github.com/uhm-lost-and-found/uhm-lost-and-found), and click the "Use this template" button to create your repository initialized with a copy of this application. Alternatively, you can download the sources as a zip file or make a fork of the repo.  However you do it, download a copy of the repo to your local computer.
 
 Third, cd into the uhm-lost-and-found/app directory and install libraries with:
 
@@ -159,7 +157,7 @@ It's significantly easier to do development with ESLint integrated directly into
 
 UHM Lost and Found uses [TestCafe](https://devexpress.github.io/testcafe/) to provide automated end-to-end testing.
 
-The UHM Lost and Found end-to-end test code employs the page object model design pattern.  In the [uhm-lost-found tests/ directory](https://github.com/uhm-lost-and-found/uhm-lost-and-found/tree/main/app/tests), the file [tests.testcafe.js](https://github.com/uhm-lost-and-found/uhm-lost-and-found/blob/main/app/tests/tests.testcafe.js) contains the TestCafe test definitions. The remaining files in the directory contain "page object models" for the various pages in the system (i.e. Home, Landing, Interests, etc.) as well as one component (navbar). This organization makes the test code shorter, easier to understand, and easier to debug.
+The UHM Lost and Found end-to-end test code employs the page object model design pattern.  In the [uhm-lost-found tests/ directory](https://github.com/uhm-lost-and-found/uhm-lost-and-found/tree/main/app/tests), the file [tests.testcafe.js](https://github.com/uhm-lost-and-found/uhm-lost-and-found/blob/main/app/tests/tests.testcafe.js) contains the TestCafe test definitions. The remaining files in the directory contain "page object models" for the various pages in the system (i.e. Home, Add Item, Edit Item, etc.) as well as one component (navbar). This organization makes the test code shorter, easier to understand, and easier to debug.
 
 To run the end-to-end tests in development mode, you must first start up a UHM Lost and Found instance by invoking `meteor npm run start` in one console window.
 
@@ -178,20 +176,26 @@ $ meteor npm run testcafe
 > testcafe chrome tests/*.testcafe.js
 
  Running tests in:
- - Chrome 86.0.4240.111 / macOS 10.15.7
+ - Chrome 124.0.0.0 / Windows 11
 
- UHM Lost and Found localhost test with default db
- ✓ Test that landing page shows up
- ✓ Test that signin and signout work
- ✓ Test that signup page, then logout works
- ✓ Test that lostItems page displays
- ✓ Test that lostItemsAdmin page displays
- ✓ Test that home page display and profile modification works
- ✓ Test that addItem page works
+ uhm-lost-and-found localhost test with default db
+ √ Test that HOME page shows up without being logged in
+ √ Test that LOST ITEMS page shows up without being logged in
+ √ Test that SIGN IN and SIGN OUT work with a departmental account
+ √ Test that HOME page appears after signing in with a departmental account
+ √ Test that LOST ITEMS page appears after signing in with a departmental account
+ √ Test that ADD ITEM page appears after signing in with a departmental account
+ √ Test that EDIT ITEM page appears after signing in with a departmental account
+ √ Test that SIGN IN and SIGN OUT work with an admin account
+ √ Test that HOME page appears after signing in with an admin account
+ √ Test that LOST ITEMS page appears after signing in with an admin account
+ √ Test that ADD ITEM page appears after signing in with an admin account
+ √ Test that EDIT ITEM page appears after signing in with an admin account
+ √ Test that DEPARTMENTS page appears after signing in with an admin account
+ √ Test that ADD DEPARTMENT page appears after signing in with an admin account
 
 
- 7 passed (40s)
-
+ 14 passed (39s)
  $
 ```
 
@@ -208,21 +212,27 @@ $ meteor npm run testcafe-ci
 > testcafe chrome:headless tests/*.testcafe.js -q --app "meteor npm run start"
 
  Running tests in:
- - Chrome 86.0.4240.111 / macOS 10.15.7
+ - Chrome 124.0.0.0 / Windows 11
 
- UHM Lost and Found localhost test with default db
- ✓ Test that landing page shows up
- ✓ Test that signin and signout work
- ✓ Test that signup page, then logout works
- ✓ Test that lostItems page displays
- ✓ Test that lostItemsAdmin page displays
- ✓ Test that home page display and profile modification works
- ✓ Test that addItem page works
+ uhm-lost-and-found localhost test with default db
+ √ Test that HOME page shows up without being logged in
+ √ Test that LOST ITEMS page shows up without being logged in
+ √ Test that SIGN IN and SIGN OUT work with a departmental account
+ √ Test that HOME page appears after signing in with a departmental account
+ √ Test that LOST ITEMS page appears after signing in with a departmental account
+ √ Test that ADD ITEM page appears after signing in with a departmental account
+ √ Test that EDIT ITEM page appears after signing in with a departmental account
+ √ Test that SIGN IN and SIGN OUT work with an admin account
+ √ Test that HOME page appears after signing in with an admin account
+ √ Test that LOST ITEMS page appears after signing in with an admin account
+ √ Test that ADD ITEM page appears after signing in with an admin account
+ √ Test that EDIT ITEM page appears after signing in with an admin account
+ √ Test that DEPARTMENTS page appears after signing in with an admin account
+ √ Test that ADD DEPARTMENT page appears after signing in with an admin account
 
 
- 7 passed (56s)
-
-$
+ 14 passed (39s)
+ $
 ```
 
 All the tests pass, but the first test is marked as "unstable". At the time of writing, TestCafe fails the first time it tries to run a test in this mode, but subsequent attempts run normally. To prevent the test run from failing due to this problem with TestCafe, we enable [testcafe quarantine mode](https://devexpress.github.io/testcafe/documentation/guides/basic-guides/run-tests.html#quarantine-mode).

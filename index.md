@@ -77,8 +77,7 @@ Click on the "Sign In" button in the upper right corner of the navbar. You must 
 
 ### Accessing Admin Pages
 
-Once you are signed in with your department and Admin accounts include two new pages (Add Item, and Edit Item) at the top of the navbar. The Admin account will also include Departments and Add Departments links.
-(
+Once you are signed in with your department or Admin account, two new page links appear (Add Item, and Edit Item) at the top of the navbar. The Admin account will also include Departments and Add Departments links.
 
 ![](img/M2-admin-navbar.png)
 

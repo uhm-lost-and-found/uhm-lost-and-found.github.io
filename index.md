@@ -23,8 +23,7 @@ The following tools are used:
 
 It implements a variety of useful design concepts, including:
 
-* Several collections (Clothing, Technology, IDs) for item types.
-* Top-level index pages (Add Item, Lost Items, Lost Items Admin) for admin departmental accounts.
+* Top-level index pages (Add Item, Lost Items, Lost Items Admin) for departmental and admin accounts.
 * A simple Edit function accessible from the Lost Items page to edit item descriptions or remove items.
 * Authentication using the built-in Meteor accounts package along with a Login page.
 * Authorization examples: certain pages are public (Landing, Login), while others require departmental admin accounts (Add Item, Lost Items, Lost Items Admin).

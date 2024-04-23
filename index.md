@@ -254,6 +254,8 @@ Milestone 1 was managed using [UHM Lost and Found GitHub Project Board M1](https
 
 Milestone 2 was managed using [UHM Lost and Found GitHub Project Board M2](https://github.com/orgs/uhm-lost-and-found/projects/4/views/1):
 
+Milestone 3 was managed using [UHM Lost and Found GitHub Project Board M3](https://github.com/orgs/uhm-lost-and-found/projects/5/views/3):
+
 ![](images/project-board-1.png)
 
 

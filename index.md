@@ -7,6 +7,7 @@
 * [Deployment](#deployment)
 * [Developer Guide](#developer-guide)
 * [Development History](#development-history)
+* [Continuous Integration](#continuous-integration)
 * [Contact Us](#contact-us)
 
 ## Overview
@@ -264,6 +265,13 @@ Milestone 2 was managed using [UHM Lost and Found GitHub Project Board M2](https
 Milestone 3 was managed using [UHM Lost and Found GitHub Project Board M3](https://github.com/orgs/uhm-lost-and-found/projects/5/views/3):
 
 ![](images/project-board-1.png)
+
+
+## Continuous Integration
+
+UHM Lost and Found uses GitHub Actions to automatically run ESLint and TestCafe each time a commit is made to the default branch. You can see the results of all our recent “workflows” at https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions.
+
+The workflow definition file is located at .github/workflows/ci.yml.
 
 
 ## Contact Us

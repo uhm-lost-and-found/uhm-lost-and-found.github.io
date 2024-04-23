@@ -268,7 +268,7 @@ Milestone 3 was managed using [UHM Lost and Found GitHub Project Board M3](https
 
 ## Continuous Integration
 
-[![ci-meteor-application-template-react](https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions/workflows/ci.yml/badge.svg)](https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions/workflows/ci.yml)
+[![uhm-lost-and-found](https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions/workflows/ci.yml)
 
 UHM Lost and Found uses GitHub Actions to automatically run ESLint and TestCafe each time a commit is made to the default branch. You can see the results of all our recent “workflows” at https://github.com/uhm-lost-and-found/uhm-lost-and-found/actions.
 

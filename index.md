@@ -12,7 +12,7 @@
 
 ## Overview
 
-UHM Lost and Found is a web application dedicated to posting lost and found items for the University of Hawaii Manoa campus. Departments can post about lost items within their offices, enabling students to recognize their belongings and know exactly where they may find it.
+UHM Lost and Found is a web application dedicated to posting lost and found items for the University of Hawaii Manoa campus. Departments can post about lost items within their offices, enabling students to recognize their belongings and know exactly where they may find them.
 
 The following tools are used:
 
@@ -24,10 +24,10 @@ The following tools are used:
 
 It implements a variety of useful design concepts, including:
 
-* Top-level index pages (Add Item, Lost Items, Lost Items Admin) for departmental and admin accounts.
+* Top-level index pages (Add Item, Lost Items, Lost Items Department, Lost Items Admin) for departmental and admin accounts.
 * A simple Edit function accessible from the Lost Items page to edit item descriptions or remove items.
 * Authentication using the built-in Meteor accounts package along with a Login page.
-* Authorization examples: certain pages are public (Landing, Login), while others require departmental admin accounts (Add Item, Lost Items, Lost Items Admin).
+* Authorization examples: certain pages are public (Landing, Login), while others require departmental or admin accounts (Add Item, Lost Items, Lost Items Department, Lost Items Admin).
 
 ## User Guide
 
@@ -35,56 +35,63 @@ This section provides a walkthrough of the UHM Lost and Found user interface and
 
 ### Landing Page
 
-The Landing Page is presented to users when they visit the top-level URL of the site.
+The Landing Page is presented to users when they visit the top-level URL of the site. Users do not need to be logged in to access this page.
 
 ![](img/M3-landing.png)
 
 ### Item Page
 
-From the Landing Page, users may access the Lost Items page to view a catalog of misplaced items on campus.
+From the Landing Page, users may access the Lost Items page to view a catalog of misplaced items on campus. Users do not need to be logged in to access this page.
 
 ![](img/M3-Items-page.png)
 
 ### Login Page
 
-The Sign-In Page enables the University of Hawaii Manoa departments access to the lost and found items database.
-
-![](img/M3-sign-in.png)
-
-![](img/sign-out-page.png)
-
-### Items Pages (Lost Items, Add Item, Edit Items Admin)
-
-Upon logging in with a department admin account, UHM Lost and Found provides additional pages for adding new items, and another to edit or remove current items from a lost items page.
-
-The Lost Items page will show all the current lost items in the database and their associated locations, the approximate times the items were lost, and the item descriptions. 
-
-![](img/M3-itempage-admin.png)
-
-The Edit Items Admin page allows departments to edit or remove pre-existing lost items.
-
-![](img/M3-editform.png)
-
-The Add Item page allows departments to add a new lost item.
-
-![](img/M3-addItem.png)
-
-### Sign-In
-
-Click on the "Sign In" button in the upper right corner of the navbar. You must have been previously registered in the system to access departmental admin features:
+Click on the "Sign In" button in the upper right corner of the navbar. You must have been previously registered in the system to access department or admin features.
 
 ![](img/sign-in-navbar.png)
 
-### Accessing Admin Pages
+The Sign-In Page enables the University of Hawaii at Manoa departments access to the lost and found items database, or a University of Hawaii at Manoa admin to manage the departmental accounts.
 
-Once you are signed in with your department or Admin account, two new page links appear (Add Item, and Edit Item) at the top of the navbar. The Admin account will also include Departments and Add Departments links.
+![](img/M3-sign-in.png)
 
-![](img/M2-admin-navbar.png)
+![](img/M3-sign-out.png)
+
+### Department Pages (Lost Items (Department), Add Item, Edit Item)
+
+Upon logging in with a department account, UHM Lost and Found provides additional pages for adding to and editing the database.
+
+The Lost Items (Department) page will show the current lost items in the respective department's database with information relevant to the specific lost item such as when it was found, where it was found, etc. It also gives departments access to edit or remove any item in their respective database.
+
+![](img/M3-lostitems-department.png)
+
+If the department selects the "edit" button on a particular item, they are brought to the Edit Item page with a form to change the information displayed for that item.
+
+![](img/M3-edititem-department.png)
+
+The Add Item page allows departments to add a new lost item to their respective database, allowing them editing and removal access for the new lost item.
+
+![](img/M3-additem-department.png)
+
+### Admin Pages (Lost Items (Admin), Add Item, Edit Item, Departments, Add Departments)
+
+Once you are signed in with your admin account, two new page links appear (Departments and Add Department) at the top of the navbar, as well as access to all lost items in all databases.
+
+The Lost Items (Admin) page allows the admin account to edit or remove any lost item in any database. The process to do so is the same as for any individual department.
+
+![](img/M3-lostitems-admin.png)
+
+The Departments page currently lists the username of each account registered in the Meteor user collection. This is to be further refined to only display departmental accounts in a neater fashion while allowing the admin to remove departments from the Meteor user collection.
+
+![](img/M3-departments-admin.png)
+
+The Add Department page allows the admin to create new departmental accounts with temporary passwords to give to departments for their own use. Once an account is successfully created, the page asks the admin if it wants to create another account. Otherwise, it gives a reason for the failed creation of the account.
+
+![](img/M3-adddepartment-admin.png)
 
 ## Deployment
 
 [https://uhmlostandfound.com/](https://uhmlostandfound.com/)
-
 
 ## Developer Guide
 

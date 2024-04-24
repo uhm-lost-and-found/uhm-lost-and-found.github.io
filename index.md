@@ -147,7 +147,7 @@ UHM Lost and Found includes a [.eslintrc](https://github.com/uhm-lost-and-found/
 meteor npm run lint
 ```
 
-Here is sample output indicating that no ESLint errors were detected:
+Here is a sample output indicating that no ESLint errors were detected:
 
 ```
 $ meteor npm run lint
@@ -267,19 +267,19 @@ The following sections document the current development history of UHM Lost and 
 
 The primary goal of Milestone 1 was to create a set of HTML pages providing a mockup of the pages in the system.
 
-Milestone 1 was managed using [UHM Lost and Found GitHub Project Board M1](https://github.com/orgs/uhm-lost-and-found/projects/2/views/2):
+Milestone 1 was managed using [UHM Lost and Found GitHub Project Board M1](https://github.com/orgs/uhm-lost-and-found/projects/2/views/2).
 
 ### Milestone 2: Full-Stack Integration
 
 The primary goal of Milestone 2 was to implement functionality to the website. More specifically, have pages that read and write data to MongoDB collections.
 
-Milestone 2 was managed using [UHM Lost and Found GitHub Project Board M2](https://github.com/orgs/uhm-lost-and-found/projects/4/views/1):
+Milestone 2 was managed using [UHM Lost and Found GitHub Project Board M2](https://github.com/orgs/uhm-lost-and-found/projects/4/views/1).
 
 ### Milestone 3: Full Functionality
 
 The primary goal of Milestone 3 is to create full functionality of all working parts of the website to completion.
 
-Milestone 3 was managed using [UHM Lost and Found GitHub Project Board M3](https://github.com/orgs/uhm-lost-and-found/projects/5/views/3):
+Milestone 3 was managed using [UHM Lost and Found GitHub Project Board M3](https://github.com/orgs/uhm-lost-and-found/projects/5/views/3).
 
 ![](images/project-board-1.png)
 

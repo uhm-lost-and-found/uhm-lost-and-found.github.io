@@ -39,13 +39,13 @@ The Landing Page is presented to users when they visit the top-level URL of the 
 
 ![](img/M3-landing.png)
 
-### Item Page
+### Lost Items Page
 
 From the Landing Page, users may access the Lost Items page to view a catalog of misplaced items on campus. Users do not need to be logged in to access this page.
 
 ![](img/M3-Items-page.png)
 
-### Login Page
+### Login Pages
 
 Click on the "Sign In" button in the upper right corner of the navbar. You must have been previously registered in the system to access department or admin features.
 
@@ -90,6 +90,8 @@ The Add Department page allows the admin to create new departmental accounts wit
 ![](img/M3-adddepartment-admin.png)
 
 ## Deployment
+
+This project is deployed on Digital Ocean at:
 
 [https://uhmlostandfound.com/](https://uhmlostandfound.com/)
 

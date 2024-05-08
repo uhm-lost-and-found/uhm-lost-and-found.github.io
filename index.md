@@ -251,8 +251,15 @@ The only impact of quarantine mode should be that the first test is marked as "u
 
 ## Community Feedback
 
-We are interested in your experience using Bowfolio! If you would like, please take a couple of minutes to fill out the [UHM Lost and Found Feedback Form](https://forms.gle/yrFEYgoEAH2o7ZWu9). It contains only five short questions and will help us understand how to improve the system.
+[UHM Lost and Found Feedback Form](https://forms.gle/yrFEYgoEAH2o7ZWu9).
 
+The results of our five anonymous feedback submissions from members of the UH community:
+* All five users reported that the website was easy to use and fully functional.
+* All five users reported that the website was organized and appealing to the eyes.
+* All five users reported that the documentation was quite clear and told the user what they needed to know to understand the website.
+* One user suggested adding videos to the documentation as they are a "visual learner." Another user suggested breaking the paragraphs in the documentation down into bullet points. The remaining three users did not leave any suggestions on the documentation.
+* One user suggested fewer pages overall since the Lost Items pages and Edit Items pages had similar UI interfaces. The remaining four users did not leave suggestions on what else we could do to improve UHM Lost and Found.
+  
 ## Development History
 
 The development process for UHM Lost and Found conforms to [Issue Driven Project Management](http://courses.ics.hawaii.edu/ics314f19/modules/project-management/) practices. In a nutshell:
@@ -262,7 +269,7 @@ The development process for UHM Lost and Found conforms to [Issue Driven Project
 * Each task is described using a GitHub Issue and is assigned to a single developer to complete.
 * Tasks should typically consist of work that can be completed in 2-4 days.
 * The work for each task is accomplished with a git branch named "issue-XX", where XX is replaced by the issue number.
-* When a task is complete, its corresponding issue is closed and its corresponding git branch is merged into main.
+* When a task is complete, its corresponding issue is closed and its corresponding git branch is merged into the main branch.
 * The state (todo, in progress, complete) of each task for a milestone is managed using a GitHub Project Board.
 
 The following sections document the current development history of UHM Lost and Found.

@@ -153,8 +153,8 @@ Here is a sample output indicating that no ESLint errors were detected:
 ```
 $ meteor npm run lint
 
-> uhm-lost-and-found@ lint /Users/MRasavong/github/uhm-lost-and-found/uhm-lost-and-found/app
-> eslint --quiet --ext .jsx --ext .js ./imports ./tests
+> uhm-lost-and-found@ lint C:\Users\MRasavong\GitHub\uhm-lost-and-found\uhm-lost-and-found\app
+> eslint --quiet --ext .jsx --ext .js ./imports && eslint --quiet --ext .js ./tests
 
 $
 ```

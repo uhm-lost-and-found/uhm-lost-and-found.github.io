@@ -182,7 +182,7 @@ You will see browser windows appear and disappear as the tests run.  If the test
 ```
 $ meteor npm run testcafe
 
-> uhm-lost-and-found@ testcafe /Users/MRasavong/github/uhm-lost-and-found/uhm-lost-and-found/app
+> uhm-lost-and-found@ testcafe C:\Users\MRasavong\GitHub\uhm-lost-and-found\uhm-lost-and-found\app
 > testcafe chrome tests/*.testcafe.js
 
  Running tests in:
@@ -190,22 +190,21 @@ $ meteor npm run testcafe
 
  uhm-lost-and-found localhost test with default db
  √ Test that HOME page shows up without being logged in
- √ Test that LOST ITEMS page shows up without being logged in
+ √ Test that LOST ITEMS page shows up and items can be viewed without being logged in
  √ Test that SIGN IN and SIGN OUT work with a departmental account
  √ Test that HOME page appears after signing in with a departmental account
- √ Test that LOST ITEMS page appears after signing in with a departmental account
- √ Test that ADD ITEM page appears after signing in with a departmental account
- √ Test that EDIT ITEM page appears after signing in with a departmental account
+ √ Test that LOST ITEMS page appears after signing in with a departmental account and items can be viewed
+ √ Test that ADD ITEM page appears after signing in with a departmental account and items can be added
+ √ Test that EDIT ITEM page appears after signing in with a departmental account and items can be viewed and edited
  √ Test that SIGN IN and SIGN OUT work with an admin account
  √ Test that HOME page appears after signing in with an admin account
- √ Test that LOST ITEMS page appears after signing in with an admin account
- √ Test that ADD ITEM page appears after signing in with an admin account
- √ Test that EDIT ITEM page appears after signing in with an admin account
- √ Test that DEPARTMENTS page appears after signing in with an admin account
- √ Test that ADD DEPARTMENT page appears after signing in with an admin account
+ √ Test that LOST ITEMS page appears after signing in with an admin account and items can be viewed
+ √ Test that EDIT ITEM page appears after signing in with an admin account and items can be viewed and edited
+ √ Test that DEPARTMENTS page appears after signing in with an admin account and accounts are displayed
+ √ Test that ADD DEPARTMENT page appears after signing in with an admin account and departments can be added
 
 
- 14 passed (39s)
+ 13 passed (1m 20s)
  $
 ```
 
@@ -218,7 +217,7 @@ Then, invoke `meteor npm run testcafe-ci`.  You will not see any windows appear.
 ```
 $ meteor npm run testcafe-ci
 
-> uhm-lost-and-found@ testcafe-ci /Users/MRasavong/github/uhm-lost-and-found/uhm-lost-and-found/app
+> uhm-lost-and-found@ testcafe-ci C:\Users\MRasavong\GitHub\uhm-lost-and-found\uhm-lost-and-found\app
 > testcafe chrome:headless tests/*.testcafe.js -q --app "meteor npm run start"
 
  Running tests in:
@@ -226,22 +225,20 @@ $ meteor npm run testcafe-ci
 
  uhm-lost-and-found localhost test with default db
  √ Test that HOME page shows up without being logged in
- √ Test that LOST ITEMS page shows up without being logged in
+ √ Test that LOST ITEMS page shows up and items can be viewed without being logged in
  √ Test that SIGN IN and SIGN OUT work with a departmental account
  √ Test that HOME page appears after signing in with a departmental account
- √ Test that LOST ITEMS page appears after signing in with a departmental account
- √ Test that ADD ITEM page appears after signing in with a departmental account
- √ Test that EDIT ITEM page appears after signing in with a departmental account
+ √ Test that LOST ITEMS page appears after signing in with a departmental account and items can be viewed
+ √ Test that ADD ITEM page appears after signing in with a departmental account and items can be added
+ √ Test that EDIT ITEM page appears after signing in with a departmental account and items can be viewed and edited
  √ Test that SIGN IN and SIGN OUT work with an admin account
  √ Test that HOME page appears after signing in with an admin account
- √ Test that LOST ITEMS page appears after signing in with an admin account
- √ Test that ADD ITEM page appears after signing in with an admin account
- √ Test that EDIT ITEM page appears after signing in with an admin account
- √ Test that DEPARTMENTS page appears after signing in with an admin account
- √ Test that ADD DEPARTMENT page appears after signing in with an admin account
+ √ Test that LOST ITEMS page appears after signing in with an admin account and items can be viewed
+ √ Test that EDIT ITEM page appears after signing in with an admin account and items can be viewed and edited
+ √ Test that DEPARTMENTS page appears after signing in with an admin account and accounts are displayed
+ √ Test that ADD DEPARTMENT page appears after signing in with an admin account and departments can be added
 
-
- 14 passed (39s)
+ 13 passed (1m 20s)
  $
 ```
 

@@ -6,6 +6,7 @@
 * [User Guide](#user-guide)
 * [Deployment](#deployment)
 * [Developer Guide](#developer-guide)
+* [Community Feedback](#community-feedback)
 * [Development History](#development-history)
 * [Continuous Integration](#continuous-integration)
 * [Contact Us](#contact-us)
@@ -248,6 +249,9 @@ All the tests pass, but the first test is marked as "unstable". At the time of w
 
 The only impact of quarantine mode should be that the first test is marked as "unstable".
 
+## Community Feedback
+
+We are interested in your experience using Bowfolio! If you would like, please take a couple of minutes to fill out the [UHM Lost and Found Feedback Form](https://forms.gle/yrFEYgoEAH2o7ZWu9). It contains only five short questions and will help us understand how to improve the system.
 
 ## Development History
 

@@ -62,7 +62,7 @@ The Sign-In Page enables the University of Hawaii at Manoa departments access to
 
 Upon logging in with a department account, UHM Lost and Found provides additional pages for adding to and editing the database.
 
-The Lost Items page will show the current lost items in the respective department's database with information relevant to the specific lost item such as when it was found, where it was found, etc. It also gives departments access to edit or remove any item in their respective database.
+The Edit Items page will show the current lost items in the respective department's database with information relevant to the specific lost item such as when it was found, where it was found, etc. It also gives departments access to edit or remove any item in their respective database.
 
 ![](img/final-dep-edit-pg.png)
 

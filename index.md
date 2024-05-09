@@ -50,7 +50,7 @@ From the Landing Page, users may access the Lost Items page to view a catalog of
 
 Click on the "Sign In" button in the upper right corner of the navbar. You must have been previously registered in the system to access department or admin features.
 
-![](img/final-nav-signin.png)
+![](img/final-signin-navbar.png)
 
 The Sign-In Page enables the University of Hawaii at Manoa departments access to the lost and found items database, or a University of Hawaii at Manoa admin to manage the departmental accounts.
 
